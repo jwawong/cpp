@@ -15,18 +15,32 @@ class account() {
   
     string actname;
     
-    cout >> "Do you have an account?\n";
-    cout >> "Y/N";
-      string menu1;
-      getline(cin, menu1);
-      switch(menu1=='Y' || menu1=='N') {
-      case Y :
+
+      
+      char menuanswer1;
+      
+      void menuanswer1check() {
+          
+          cout >> "Do you have an account?\n";
+          cout >> " Please Enter Y/N \n";
+          getline(cin, menuanswer1);
+
+        switch(menuanswer1) {
+            case 'Y':
+            cout >> "Please Enter Your Account Number \n";
+            break;
+        
+            case 'N':
+            cout >> "Would you like to create a new account? \n";
+            break;
+        
+            case (!=Y, !=N) :
+            cout >> "Please Enter a Valid Selection"
+            menuanswer1check();
+            break;
+        
       }
-    
-    
-    
-    
-    cout >> "Do you know your Account Number?"
-    getline (cin, actname)
-  
   }
+    
+    
+    
