@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class account() {
+  public:
+  string firstname;
+  string lastname;
+  float cash;
+  
+  }
+  
+  
+  int main() {
+  
+    string actname;
+    
+    cout >> "Do you have an account?\n";
+    cout >> "Y/N";
+      string menu1;
+      getline(cin, menu1);
+      switch(menu1=='Y' || menu1=='N') {
+      case Y :
+      }
+    
+    
+    
+    
+    cout >> "Do you know your Account Number?"
+    getline (cin, actname)
+  
+  }
